@@ -1,6 +1,7 @@
 {
   "name": "globalxtreme/parser",
   "description": "GlobalXtreme Parser Pattern",
+  "license": "MIT",
   "authors": [
     {
       "name": "Yuswa",
