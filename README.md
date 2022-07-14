@@ -1,9 +1,9 @@
 GlobalXtreme Parser
 ======
 
-[![Latest Release](https://poser.pugx.org/globalxtreme/parser/v/stable.png)](https://packagist.org/packages/globalxtreme/parser)
-[![Total Downloads](https://poser.pugx.org/globalxtreme/parser/downloads.png)](https://packagist.org/packages/globalxtreme/parser)
-[![License](https://poser.pugx.org/globalxtreme/parser/license.png)](https://packagist.org/packages/globalxtreme/parser)
+[![Version](http://poser.pugx.org/globalxtreme/parser/version)](https://packagist.org/packages/globalxtreme/parser)
+[![Total Downloads](http://poser.pugx.org/globalxtreme/parser/downloads)](https://packagist.org/packages/globalxtreme/parser)
+[![License](http://poser.pugx.org/globalxtreme/parser/license)](https://packagist.org/packages/globalxtreme/parser)
 
 ### Install with composer
 
