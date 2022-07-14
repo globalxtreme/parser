@@ -1,0 +1,29 @@
+{
+  "name": "globalxtreme/parser",
+  "description": "GlobalXtreme Parser Pattern",
+  "authors": [
+    {
+      "name": "Yuswa",
+      "email": "yuswa98@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GlobalXtreme\\Parser\\": "src/"
+    },
+    "files": [
+      "src/Misc/helpers.php"
+    ]
+  },
+  "require": {
+    "php": "8.*",
+    "illuminate/support": "^8.83|^9.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "GlobalXtreme\\Parser\\ParserServiceProvider"
+      ]
+    }
+  }
+}
