@@ -2,6 +2,7 @@
 
 namespace GlobalXtreme\Parser\Builder;
 
+use GlobalXtreme\Parser\BaseParser;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -41,7 +42,7 @@ class ParserBuilder
                 $data = $data->first();
             }
 
-            $this->parserClass = $data?->parserClass;
+            $this->parserClass = $data?->parserClass ?: BaseParser::class;
 
         }
 
