@@ -71,6 +71,6 @@ class GlobalXtremeParserMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Packages\Parser';
+        return $rootNamespace.'\Services\Parser';
     }
 }
