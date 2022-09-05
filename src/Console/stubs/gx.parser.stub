@@ -6,6 +6,11 @@ use GlobalXtreme\Parser\BaseParser;
 
 class {{ class }} extends BaseParser
 {
+    /**
+     * @param $collections
+     *
+     * @return array|null
+     */
     public static function get($collections)
     {
         if (!$collections || count($collections) == 0) {
@@ -20,6 +25,11 @@ class {{ class }} extends BaseParser
         return $data;
     }
 
+    /**
+     * @param $data
+     *
+     * @return array|null
+     */
     public static function first($collection)
     {
         if (!$collection) {
