@@ -5,7 +5,7 @@ namespace GlobalXtreme\Parser\Console;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'make:gx-parser')]
+#[AsCommand(name: 'make:parser')]
 class GlobalXtremeParserMakeCommand extends GeneratorCommand
 {
     /**
@@ -13,7 +13,7 @@ class GlobalXtremeParserMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:gx-parser';
+    protected $name = 'make:parser';
 
     /**
      * The name of the console command.
@@ -24,7 +24,7 @@ class GlobalXtremeParserMakeCommand extends GeneratorCommand
      *
      * @deprecated
      */
-    protected static $defaultName = 'make:gx-parser';
+    protected static $defaultName = 'make:parser';
 
     /**
      * The console command description.
@@ -47,7 +47,7 @@ class GlobalXtremeParserMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return $this->resolveStubPath('/stubs/gx.parser.stub');
+        return $this->resolveStubPath('/stubs/parser.stub');
     }
 
     /**
