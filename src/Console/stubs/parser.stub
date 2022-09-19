@@ -7,36 +7,17 @@ use GlobalXtreme\Parser\BaseParser;
 class {{ class }} extends BaseParser
 {
     /**
-     * @param $collections
-     *
-     * @return array|null
-     */
-    public static function get($collections)
-    {
-        if (!$collections || count($collections) == 0) {
-            return null;
-        }
-
-        $data = [];
-        foreach ($collections as $collection) {
-            $data[] = self::first($collection);
-        }
-
-        return $data;
-    }
-
-    /**
      * @param $data
      *
      * @return array|null
      */
-    public static function first($collection)
+    public static function first($data)
     {
-        if (!$collection) {
+        if (!$data) {
             return null;
         }
 
-        return parent::first($collection);
+        return parent::first($data);
     }
 
 }
