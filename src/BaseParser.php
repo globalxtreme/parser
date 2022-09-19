@@ -17,7 +17,7 @@ class BaseParser
 
         $data = [];
         foreach ($collections as $collection) {
-            $data[] = self::first($collection);
+            $data[] = static::first($collection);
         }
 
         return $data;
@@ -48,7 +48,7 @@ class BaseParser
      */
     public static function briefs($collections)
     {
-        return self::get($collections);
+        return static::get($collections);
     }
 
     /**
@@ -58,7 +58,7 @@ class BaseParser
      */
     public static function brief($data)
     {
-        return self::first($data);
+        return static::first($data);
     }
 
 }
