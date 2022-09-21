@@ -48,7 +48,16 @@ class BaseParser
      */
     public static function briefs($collections)
     {
-        return static::get($collections);
+        if (!$collections || count($collections) == 0) {
+            return null;
+        }
+
+        $data = [];
+        foreach ($collections as $collection) {
+            $data[] = static::brief($collection);
+        }
+
+        return $data;
     }
 
     /**
